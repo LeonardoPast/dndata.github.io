@@ -130,8 +130,8 @@ const views = {
     return `
       ${section('Mappa')}
       <div class="card">
-        <p>Inserisci qui un'immagine della mappa (es. <code>assets/map.jpg</code>) o un iframe con una mappa interattiva.</p>
-        <p class="muted">Suggerimento: usa un'immagine ad alta risoluzione e aggiungi annotazioni con marker SVG.</p>
+        <p>Mappa mondo</p>
+        <p class="muted"></p>
       </div>`;
   }
 };
