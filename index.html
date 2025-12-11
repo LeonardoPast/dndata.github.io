@@ -1,10 +1,103 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="it" data-theme="dark">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Campagna D&D — Archivio</title>
+  <meta name="description" content="Sito statico moderno per organizzare e condividere informazioni di una campagna di Dungeons & Dragons." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+  <header class="topbar">
+    <div class="brand">
+      <svg class="brand-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3 6 6 .5-4.5 4 1.5 6L12 16l-6 2.5 1.5-6L3 8.5 9 8l3-6z" fill="currentColor"/></svg>
+      <div>
+        <h1>Campagna D&D</h1>
+        <p class="subtitle">Worldbook, personaggi, quest, sessioni</p>
+      </div>
+    </div>
+    <div class="actions">
+      <input id="search" type="search" placeholder="Cerca personaggi, luoghi, quest…" aria-label="Cerca" />
+      <button id="themeToggle" class="icon-btn" title="Tema"><span class="icon">🌙</span></button>
+      <a class="cta" href="#/overview">Panoramica</a>
+    </div>
+  </header>
 
+  <nav class="tabs" aria-label="Sezioni">
+    <a href="#/overview" class="tab">Panoramica</a>
+    <a href="#/world" class="tab">Mondo</a>
+    <a href="#/factions" class="tab">Fazioni</a>
+    <a href="#/characters" class="tab">Personaggi</a>
+    <a href="#/quests" class="tab">Quest</a>
+    <a href="#/sessions" class="tab">Sessioni</a>
+    <a href="#/rules" class="tab">Regole</a>
+    <a href="#/resources" class="tab">Risorse</a>
+    <a href="#/map" class="tab">Mappa</a>
+  </nav>
+
+  <main id="app" class="container" aria-live="polite"></main>
+
+  <footer class="footer">
+    <small>© <span id="year"></span> Campagna D&D · Sito creato da Leonardo Pastore</small>
+  </footer>
+
+  <script>
+    // Fallback dati incorporati (modificabili). In produzione si può usare data/campaign.json
+    window.CAMPAIGN = {
+      title: "Campagna DnD per pochi",
+      overview: {
+        tagline: "NAMOOOOO",
+        system: "D&D 5e",
+        schedule: "Troviamo sempre na quadra",
+        party: ["Edi", "Sborro", "Sribellino", "Core-Zeon", "Aragon", "Bolg", "Viagra"],
+        summary: "Un gruppo di matti scocciati conosciutisi per caso che probabilmente dovranno salvare il mondo. " +
+                "N'A CAFONATA"
+      },
+      world: [
+        { name:"Nome Regno", type:"Regno", tags:["regno","mare"], summary:"Regno costiero"},
+        { name:"Nome città", type:"Luogo", tags:["capitale"], summary:"La capitale del regno"}
+      ],
+      factions: [
+        { name:"Prova fazione", alignment:"Neutrale", tags:["guerrieri"], summary:"Uccidono su commissione"}
+      ],
+      characters: [
+        { name:"Edi", role:"Halfling", class:"Artificere", level:3, tags:["tech","gay"], bio:"Padre di Core-Zeon."},
+        { name:"Core-Zeon", role:"Harengon", class:"Bullet Saint", level:3, tags:["Chad"], bio:"Aurafarmer di lavoro"},
+        { name:"Bolg", role:"Orco", class:"Barbaro", level:3, tags:["gli piacciono i maschi"], bio:"E' gay"},
+        { name:"Aragon", role:"Umano", class:"?", level:3, tags:["Gli piaccono i cavalli"], bio:"Per fortuna etero"},
+        { name:"Sborro", role:"Umano", class:"Paladino", level:3, tags:["Bestemmia"], bio:"Devoto di un dio"},
+        { name:"Viagra", role:"umana", class:"Rouge", level:3, tags:["Donna"], bio:"Luchino ha cambiato sesso"},
+        { name:"Sirbellino", role:"Umano", class:"monaco", level:3, tags:["Dogs"], bio:"Fa il dettato perfetto"}
+      ],
+      quests: [
+        { title:"Andare a parco azul", status:"In corso", tags:["citta","varco"], summary:"Scoprire di piu sui varchi"}
+      ],
+      sessions: [
+        { number:1, date:"Da vedere", recap:"incontro del party"},
+        { number:2, date:"Da vedere", recap:"Trovata una strega"},
+        { number:3, date:"Da vedere", recap: "Uccisa strega, fuga"},
+        { number:4, date:"Da vedere", recap: "Scoperto Dungeon"},
+        { number:4, date:"5-12-2025", recap: "Arrivati a nuova Caldaria"}
+      ],
+      rules: {
+        homebrew:[
+          "Il master fa vedere i tiri molto spesso",
+          "Se sei gay hai svantaggio su tiri con modificatore Carisma"
+        ],
+        links:[
+          { label:"SRD 5e", url:"https://5e.tools/"},
+          { label:"D&D Beyond", url:"https://www.dndbeyond.com/"}
+        ]
+      },
+      resources:[
+        { label:"Foglio Personaggio", url:"#"},
+        { label:"Calendario", url:"#"}
+      ]
+    };
+  </script>
+  <script src="app.js"></script>
 </body>
 </html>

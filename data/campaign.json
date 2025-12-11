@@ -1,0 +1,156 @@
+{
+  "title": "Le Cronache di Valdoria",
+  "overview": {
+    "tagline": "Intrighi politici, antiche reliquie e minacce cosmiche",
+    "system": "D&D 5e",
+    "schedule": "Giovedì sera",
+    "party": [
+      "Edy l'ebreo",
+      "Borg il gay",
+      "Aragon l'alpha",
+      "Sborro lo sborro",
+      "Core-Zeon il chad aurafarmer",
+      "Sirbellino dei sirbellini"
+    ],
+    "summary": "La compagnia indaga sulle meteore viola cadute sulle Terre di Valdoria. Ogni frammento risveglia poteri e attira fazioni rivali."
+  },
+  "world": [
+    {
+      "name": "Valdoria",
+      "type": "Regno",
+      "tags": [
+        "capitale",
+        "mare"
+      ],
+      "summary": "Regno costiero, fulcro dei commerci."
+    },
+    {
+      "name": "Foresta di Sussurri",
+      "type": "Luogo",
+      "tags": [
+        "mistero",
+        "fey"
+      ],
+      "summary": "Una foresta incantata dove il tempo scorre diversamente."
+    }
+  ],
+  "factions": [
+    {
+      "name": "Conclave Ametista",
+      "alignment": "Neutrale",
+      "tags": [
+        "maghi"
+      ],
+      "summary": "Ricercatori dei frammenti viola."
+    },
+    {
+      "name": "Compagnia della Rosa",
+      "alignment": "Buono",
+      "tags": [
+        "mercenari"
+      ],
+      "summary": "Proteggono le vie commerciali."
+    }
+  ],
+  "characters": [
+    {
+      "name": "Edi",
+      "role": "Gay",
+      "class": "Artificere",
+      "level": 3,
+      "tags": [
+        "magia",
+        "tech"
+      ],
+      "bio": "Discendente di un patto antico."
+    },
+    {
+      "name": "Thorn",
+      "role": "PC",
+      "class": "Ranger",
+      "level": 6,
+      "tags": [
+        "natura"
+      ],
+      "bio": "Cacciatore delle Terre del Nord."
+    },
+    {
+      "name": "Marek",
+      "role": "PC",
+      "class": "Paladino",
+      "level": 6,
+      "tags": [
+        "giustizia"
+      ],
+      "bio": "Devoto all'Ordine del Sole."
+    },
+    {
+      "name": "Arkhon",
+      "role": "PNG",
+      "class": "Mago",
+      "level": 9,
+      "tags": [
+        "conclave"
+      ],
+      "bio": "Arcidivo del Conclave Ametista."
+    }
+  ],
+  "quests": [
+    {
+      "title": "Frammento nella Cripta",
+      "status": "In corso",
+      "tags": [
+        "dungeon",
+        "reliquia"
+      ],
+      "summary": "Recuperare il frammento custodito sotto il Tempio di Valdoria."
+    },
+    {
+      "title": "La Via del Nord",
+      "status": "Completata",
+      "tags": [
+        "viaggio",
+        "negoziati"
+      ],
+      "summary": "Scortare i mercanti e trattare con i Clan."
+    }
+  ],
+  "sessions": [
+    {
+      "number": 1,
+      "date": "2025-10-02",
+      "recap": "Incontro con Arkhon, indizi sulla cripta."
+    },
+    {
+      "number": 2,
+      "date": "2025-10-16",
+      "recap": "Viaggio nella Foresta di Sussurri, patto con spiriti."
+    }
+  ],
+  "rules": {
+    "homebrew": [
+      "Iniziativa: tiro medio (d20 + mod, ordina per blocchi)",
+      "Riposi brevi: 45 minuti, riposi lunghi: 6 ore"
+    ],
+    "links": [
+      {
+        "label": "SRD 5e",
+        "url": "https://5e.tools/"
+      },
+      {
+        "label": "D&D Beyond",
+        "url": "https://www.dndbeyond.com/"
+      }
+    ]
+  },
+  "resources": [
+    {
+      "label": "Foglio Personaggio",
+      "url": "#"
+    },
+    {
+      "label": "Calendario",
+      "url": "#"
+    }
+  ]
+}
